@@ -12,6 +12,7 @@ import { VideoCta } from "./components/sections/VideoCta";
 import { Gallery } from "./components/sections/Gallery";
 import { Founder } from "./components/sections/Founder";
 import { Faq } from "./components/sections/Faq";
+import { Contact } from "./components/sections/Contact";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Gallery />
         <Founder />
         <Faq />
+        <Contact />
       </main>
       <Footer />
     </div>

@@ -5,8 +5,8 @@ import { navLinks, site } from "../../data/site";
 export function Footer() {
   return (
     <footer className="bg-ink text-white/70">
-      <Container className="grid grid-cols-1 gap-12 py-16 md:grid-cols-4">
-        <div className="md:col-span-2">
+      <Container className="grid grid-cols-1 gap-12 py-16 md:grid-cols-12">
+        <div className="md:col-span-5">
           <div className="flex items-center gap-2">
             <span className="flex size-8 items-center justify-center rounded-md bg-accent font-display text-sm font-semibold text-white">
               N
@@ -24,7 +24,7 @@ export function Footer() {
           </p>
         </div>
 
-        <div>
+        <div className="md:col-span-3">
           <h3 className="text-xs font-semibold tracking-[0.18em] text-white uppercase">
             Quick Links
           </h3>
@@ -39,7 +39,7 @@ export function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div className="md:col-span-4">
           <h3 className="text-xs font-semibold tracking-[0.18em] text-white uppercase">
             Contact
           </h3>
@@ -50,7 +50,7 @@ export function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Mail className="size-4 shrink-0 text-accent" />
-              <span className="break-all">{site.email}</span>
+              {site.email}
             </li>
             <li className="flex items-start gap-2">
               <MapPin className="mt-0.5 size-4 shrink-0 text-accent" />

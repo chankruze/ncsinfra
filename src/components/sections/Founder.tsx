@@ -36,7 +36,7 @@ export function Founder() {
 
         <Reveal className="relative order-1 mx-auto w-full max-w-sm lg:order-2">
           <div className="absolute -top-4 -right-4 -z-10 size-full rounded-2xl bg-accent-soft" />
-          <div className="overflow-hidden rounded-2xl bg-surface-dim">
+          <div className="aspect-4/5 overflow-hidden rounded-2xl bg-surface-dim">
             <img
               src={founderPhoto}
               alt={`${site.founder.name}, ${site.founder.role}`}

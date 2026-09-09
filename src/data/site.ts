@@ -9,6 +9,10 @@ export const site = {
   location: "Sisilo, Khurda, Odisha",
   phones: ["6370827982", "9556080380"],
   email: "nrusingacharanswain2029@gmail.com",
+  companyProfile: {
+    href: "/downloads/NCS-96147-Company-Profile.pdf",
+    size: "68.5 MB",
+  },
   founder: {
     name: "Nrusingha Charan Swain",
     role: "Founder & CEO",

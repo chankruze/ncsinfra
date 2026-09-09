@@ -1,3 +1,4 @@
+import { FileDown } from "lucide-react";
 import blueprintImage from "../../assets/photos/blueprint.jpg";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
@@ -8,6 +9,7 @@ import {
   cumulativeTurnover,
   financials,
 } from "../../data/capabilities";
+import { site } from "../../data/site";
 
 const CHART_W = 320;
 const CHART_H = 180;
@@ -205,10 +207,19 @@ export function Financials() {
           </Reveal>
         </div>
 
-        <Reveal className="mt-10 flex justify-center">
-          <LinkButton href="#contact" variant="dark">
-            Request Company Profile
+        <Reveal className="mt-10 flex flex-col items-center gap-3">
+          <LinkButton
+            href={site.companyProfile.href}
+            download
+            variant="dark"
+            withArrow={false}
+          >
+            <FileDown className="size-4" />
+            Download Company Profile
           </LinkButton>
+          <p className="text-xs text-muted">
+            PDF · {site.companyProfile.size}
+          </p>
         </Reveal>
       </Container>
     </section>

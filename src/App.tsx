@@ -7,6 +7,7 @@ import { Services } from "./components/sections/Services";
 import { Projects } from "./components/sections/Projects";
 import { RailwayExpertise } from "./components/sections/RailwayExpertise";
 import { WhyUs } from "./components/sections/WhyUs";
+import { Financials } from "./components/sections/Financials";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Projects />
         <RailwayExpertise />
         <WhyUs />
+        <Financials />
       </main>
       <Footer />
     </div>

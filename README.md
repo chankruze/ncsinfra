@@ -1,78 +1,58 @@
-# React + TypeScript + Vite
+# NCS Infra — Marketing Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Marketing/landing site for **NCS Infra** (Nrusingha Charan Swain), a
+government-approved railway civil infrastructure contractor based in
+Khurda, Odisha (IREPS ID 96147).
 
-Currently, two official plugins are available:
+Built with Vite, React, TypeScript, Tailwind CSS v4 and Framer Motion.
+Content and figures are sourced from the company profile (NCS-96147)
+and organised as typed data modules under `src/data/`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+- **Vite + React + TypeScript**
+- **Tailwind CSS v4** — theme tokens defined in `src/index.css` via `@theme`
+- **Framer Motion** — scroll-reveal animations (`src/components/ui/Reveal.tsx`)
+- **lucide-react** — iconography
+- Self-hosted variable fonts: Inter (body) and Space Grotesk (display)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Structure
 
 ```
+src/
+  components/
+    layout/     Header, Footer
+    sections/   One file per homepage section (Hero, Projects, Contact, ...)
+    ui/         Shared building blocks (Button, Container, Reveal, SectionHeading)
+  data/         Typed content extracted from the company profile
+  assets/       Curated + optimised photography, real geotagged field photos, logos
+```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+The homepage (`src/App.tsx`) composes sections in this order: Hero →
+Trust Bar → About → Services → Projects → Railway Expertise → Why Us →
+Financials → Video CTA → Gallery → Founder → FAQ → Contact.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Notable implementation details
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- The **Video CTA** section embeds the requested YouTube video as a
+  chromeless, muted, looping background (`YouTubeBackground.tsx`) using
+  the standard 16:9-oversize-and-center technique so it always covers
+  the section regardless of viewport ratio. Disabled on small screens
+  in favour of a static poster image to save mobile bandwidth.
+- The **Financials** turnover charts are hand-built inline SVG (no
+  charting library), single-series in the brand accent, with direct
+  value labels and native hover tooltips.
+- The **Contact** form has no backend — submitting composes a
+  pre-filled `mailto:` to the founder's inbox.
+- Gallery includes real geotagged site photos cropped from the company
+  profile's field documentation (Puri, Odisha) alongside supporting
+  site-work photography.
 
+## Development
+
+```bash
+npm install
+npm run dev       # start dev server
+npm run build     # type-check + production build
+npm run lint      # eslint
 ```

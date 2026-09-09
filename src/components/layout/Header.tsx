@@ -35,10 +35,15 @@ export function Header() {
     >
       <Container className="flex h-18 items-center justify-between py-4">
         <a href="#top" className="flex items-center gap-2">
-          <span className="flex size-8 items-center justify-center rounded-md bg-ink font-display text-sm font-semibold text-accent">
+          <span className="flex size-8 items-center justify-center rounded-md bg-accent font-display text-sm font-semibold text-white">
             N
           </span>
-          <span className="font-display text-lg font-semibold tracking-tight text-ink">
+          <span
+            className={cn(
+              "font-display text-lg font-semibold tracking-tight transition-colors",
+              scrolled || open ? "text-ink" : "text-white",
+            )}
+          >
             {site.brand}
           </span>
         </a>
@@ -48,7 +53,12 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-ink/70 transition-colors hover:text-ink"
+              className={cn(
+                "text-sm font-medium transition-colors",
+                scrolled || open
+                  ? "text-ink/70 hover:text-ink"
+                  : "text-white/80 hover:text-white",
+              )}
             >
               {link.label}
             </a>
@@ -64,7 +74,12 @@ export function Header() {
         <button
           type="button"
           aria-label="Toggle menu"
-          className="flex size-10 items-center justify-center rounded-full border border-ink/10 lg:hidden"
+          className={cn(
+            "flex size-10 items-center justify-center rounded-full border lg:hidden",
+            scrolled || open
+              ? "border-ink/10 text-ink"
+              : "border-white/25 text-white",
+          )}
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}

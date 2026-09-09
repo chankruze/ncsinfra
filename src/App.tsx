@@ -10,6 +10,8 @@ import { WhyUs } from "./components/sections/WhyUs";
 import { Financials } from "./components/sections/Financials";
 import { VideoCta } from "./components/sections/VideoCta";
 import { Gallery } from "./components/sections/Gallery";
+import { Founder } from "./components/sections/Founder";
+import { Faq } from "./components/sections/Faq";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Financials />
         <VideoCta />
         <Gallery />
+        <Founder />
+        <Faq />
       </main>
       <Footer />
     </div>

@@ -5,6 +5,8 @@ import { TrustBar } from "./components/sections/TrustBar";
 import { About } from "./components/sections/About";
 import { Services } from "./components/sections/Services";
 import { Projects } from "./components/sections/Projects";
+import { RailwayExpertise } from "./components/sections/RailwayExpertise";
+import { WhyUs } from "./components/sections/WhyUs";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <About />
         <Services />
         <Projects />
+        <RailwayExpertise />
+        <WhyUs />
       </main>
       <Footer />
     </div>

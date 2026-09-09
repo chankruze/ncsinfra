@@ -2,9 +2,8 @@ import field1 from "../../assets/field/field-1.jpg";
 import field2 from "../../assets/field/field-2.jpg";
 import field3 from "../../assets/field/field-3.jpg";
 import field4 from "../../assets/field/field-4.jpg";
-import ceremony1 from "../../assets/field/ceremony-1.jpg";
-import ceremony2 from "../../assets/field/ceremony-2.jpg";
-import ceremony3 from "../../assets/field/ceremony-3.jpg";
+import field5 from "../../assets/field/field-5.jpg";
+import field6 from "../../assets/field/field-6.jpg";
 import ceremony4 from "../../assets/field/ceremony-4.jpg";
 import ceremony5 from "../../assets/field/ceremony-5.jpg";
 import ceremony6 from "../../assets/field/ceremony-6.jpg";
@@ -40,38 +39,54 @@ import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Reveal } from "../ui/Reveal";
 
+const ceremonyCredit = { label: "by PoojaPatha Pvt. Ltd.", href: "https://poojapatha.com" };
+
 const photos = [
   { src: field1, caption: "Puri, Odisha", tag: "Field Documentation" },
   { src: galleryRebarWorker, caption: "Reinforcement & Rebar Work" },
-  { src: ceremony1, caption: "Bhoomi Pujan, June 2026", tag: "Project Commencement" },
   { src: galleryAerialSite, caption: "Aerial Site Progress" },
   { src: galleryWelding, caption: "Site Fabrication Work" },
   { src: field2, caption: "Puri, Odisha", tag: "Field Documentation" },
   { src: galleryEngineersSkyline, caption: "Site Engineers on Review" },
   { src: galleryAerialFoundation, caption: "Aerial Foundation Works" },
-  { src: ceremony2, caption: "Bhoomi Pujan, June 2026", tag: "Project Commencement" },
+  {
+    src: ceremony4,
+    caption: "Bhoomi Pujan, June 2026",
+    tag: "Project Commencement",
+    credit: ceremonyCredit,
+  },
   { src: galleryScaffold, caption: "Site Supervision" },
+  { src: field5, caption: "Puri, Odisha", tag: "Field Documentation" },
   { src: galleryCranesDusk, caption: "Tower Cranes on Site" },
   { src: field3, caption: "Puri, Odisha", tag: "Field Documentation" },
   { src: galleryConcreteCutting, caption: "Concrete Cutting" },
   { src: galleryPlansReview, caption: "Project Plans Review" },
-  { src: ceremony3, caption: "Bhoomi Pujan, June 2026", tag: "Project Commencement" },
+  {
+    src: ceremony6,
+    caption: "Mandap Construction, May 2026",
+    tag: "Project Commencement",
+    credit: ceremonyCredit,
+  },
   { src: galleryBeamWorker, caption: "Structural Steel Work" },
   { src: aboutSite, caption: "Site Review & Planning" },
   { src: field4, caption: "Puri, Odisha", tag: "Field Documentation" },
   { src: galleryStellClimber, caption: "Structural Steel Access" },
+  { src: field6, caption: "Puri, Odisha", tag: "Field Documentation" },
   { src: galleryNightPour, caption: "Night Concrete Pour" },
-  { src: ceremony4, caption: "Bhoomi Pujan, June 2026", tag: "Project Commencement" },
   { src: galleryExcavator, caption: "Earthwork & Excavation" },
   { src: gallerySurveyor, caption: "Site Surveying" },
   { src: galleryFormworkTeam, caption: "Formwork & Rebar Team" },
   { src: expertiseRebar, caption: "Reinforcement Works" },
-  { src: ceremony5, caption: "Bhoomi Pujan, June 2026", tag: "Project Commencement" },
+  {
+    src: ceremony5,
+    caption: "Bhoomi Pujan, June 2026",
+    tag: "Project Commencement",
+    credit: ceremonyCredit,
+  },
   { src: galleryAerialTrucks, caption: "Site Logistics & Earthmoving" },
   { src: galleryFormworkWorker, caption: "Formwork Installation" },
   { src: galleryAerialBw, caption: "Foundation & Civil Works" },
   { src: blueprint, caption: "Engineering Drawings" },
-  { src: ceremony6, caption: "Bhoomi Pujan, June 2026", tag: "Project Commencement" },
   { src: galleryInclineWorkers, caption: "Structural Access Work" },
   { src: galleryAerialRebarWorker, caption: "Aerial Rebar Placement" },
   { src: servicesCrane, caption: "Structural Framework" },
@@ -115,6 +130,17 @@ export function Gallery() {
                   <p className="text-sm font-medium text-white">
                     {photo.caption}
                   </p>
+                  {photo.credit && (
+                    <a
+                      href={photo.credit.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="relative z-10 text-xs text-white/70 underline underline-offset-2 hover:text-accent"
+                    >
+                      {photo.credit.label}
+                    </a>
+                  )}
                 </div>
               </div>
             </Reveal>

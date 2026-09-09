@@ -1,16 +1,19 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Container } from "../ui/Container";
 import { navLinks, site } from "../../data/site";
+import founderMark from "../../assets/brand/founder-mark.jpg";
 
 export function Footer() {
   return (
     <footer className="bg-ink text-white/70">
       <Container className="grid grid-cols-1 gap-12 py-16 md:grid-cols-12">
         <div className="md:col-span-5">
-          <div className="flex items-center gap-2">
-            <span className="flex size-8 items-center justify-center rounded-md bg-accent font-display text-sm font-semibold text-white">
-              N
-            </span>
+          <div className="flex items-center gap-2.5">
+            <img
+              src={founderMark}
+              alt={site.brand}
+              className="size-9 rounded-full object-cover ring-2 ring-white/20"
+            />
             <span className="font-display text-lg font-semibold text-white">
               {site.brand}
             </span>

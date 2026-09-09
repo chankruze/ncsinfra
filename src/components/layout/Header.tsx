@@ -5,6 +5,7 @@ import { Container } from "../ui/Container";
 import { LinkButton } from "../ui/Button";
 import { navLinks, site } from "../../data/site";
 import { cn } from "../../lib/cn";
+import founderMark from "../../assets/brand/founder-mark.jpg";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -34,10 +35,15 @@ export function Header() {
       )}
     >
       <Container className="flex h-18 items-center justify-between py-4">
-        <a href="#top" className="flex items-center gap-2">
-          <span className="flex size-8 items-center justify-center rounded-md bg-accent font-display text-sm font-semibold text-white">
-            N
-          </span>
+        <a href="#top" className="flex items-center gap-2.5">
+          <img
+            src={founderMark}
+            alt={site.brand}
+            className={cn(
+              "size-9 rounded-full object-cover ring-2 transition-all",
+              scrolled || open ? "ring-ink/10" : "ring-white/40",
+            )}
+          />
           <span
             className={cn(
               "font-display text-lg font-semibold tracking-tight transition-colors",

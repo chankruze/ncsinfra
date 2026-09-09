@@ -9,6 +9,7 @@ import { RailwayExpertise } from "./components/sections/RailwayExpertise";
 import { WhyUs } from "./components/sections/WhyUs";
 import { Financials } from "./components/sections/Financials";
 import { VideoCta } from "./components/sections/VideoCta";
+import { Gallery } from "./components/sections/Gallery";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <WhyUs />
         <Financials />
         <VideoCta />
+        <Gallery />
       </main>
       <Footer />
     </div>

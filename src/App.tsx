@@ -8,6 +8,7 @@ import { Projects } from "./components/sections/Projects";
 import { RailwayExpertise } from "./components/sections/RailwayExpertise";
 import { WhyUs } from "./components/sections/WhyUs";
 import { Financials } from "./components/sections/Financials";
+import { VideoCta } from "./components/sections/VideoCta";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <RailwayExpertise />
         <WhyUs />
         <Financials />
+        <VideoCta />
       </main>
       <Footer />
     </div>

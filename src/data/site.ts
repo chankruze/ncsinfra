@@ -44,6 +44,14 @@ export const navLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
+export const technologyPartner = {
+  name: "Geekofia",
+  developer: "chankruze",
+  href: "https://geekofia.in",
+  github: "https://github.com/geekofia",
+  linkedin: "https://linkedin.com/company/geekofia",
+};
+
 export const trustPoints = [
   "Government Approved Railway Civil Contractor",
   "IREPS ID — 96147",

@@ -1,6 +1,7 @@
 import { Header } from "./components/layout/Header";
 import { Footer } from "./components/layout/Footer";
 import { DeveloperCredit } from "./components/layout/DeveloperCredit";
+import { ScrollToTop } from "./components/ui/ScrollToTop";
 import { Hero } from "./components/sections/Hero";
 import { TrustBar } from "./components/sections/TrustBar";
 import { About } from "./components/sections/About";
@@ -36,6 +37,7 @@ function App() {
       </main>
       <Footer />
       <DeveloperCredit />
+      <ScrollToTop />
     </div>
   );
 }

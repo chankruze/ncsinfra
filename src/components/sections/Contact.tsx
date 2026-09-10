@@ -41,7 +41,7 @@ export function Contact() {
       `Project Enquiry — ${data.get("name")}`,
     );
     const body = encodeURIComponent(lines.join("\n"));
-    window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${site.emails[0]}?subject=${subject}&body=${body}`;
     setSubmitted(true);
   }
 
@@ -64,11 +64,11 @@ export function Contact() {
               {site.phones.join(" / ")}
             </a>
             <a
-              href={`mailto:${site.email}`}
+              href={`mailto:${site.emails[0]}`}
               className="flex items-center gap-3 text-sm font-medium text-ink hover:text-accent"
             >
               <Mail className="size-5 text-accent" />
-              {site.email}
+              {site.emails.join(" / ")}
             </a>
             <p className="flex items-center gap-3 text-sm font-medium text-ink">
               <MapPin className="size-5 text-accent" />
@@ -82,6 +82,9 @@ export function Contact() {
             </p>
             <p className="mt-1 text-sm font-medium text-ink">
               IREPS ID — {site.ireps}
+            </p>
+            <p className="mt-1 text-sm font-medium text-ink">
+              GSTIN — {site.gstin}
             </p>
           </Reveal>
 

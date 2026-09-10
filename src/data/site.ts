@@ -4,11 +4,12 @@ export const site = {
   since: 2009,
   yearsExperience: "15+",
   ireps: "96147",
+  gstin: "21BYLPS7757Q1ZD",
   tagline: "Building Odisha's Railway Infrastructure Since 2009",
   client: "East Coast Railway",
   location: "Sisilo, Khurda, Odisha",
   phones: ["6370827982", "9556080380"],
-  email: "nrusingacharanswain2029@gmail.com",
+  emails: ["snrusingh@yahoo.com", "priyanshubarik2021@gmail.com"],
   companyProfile: {
     href: "/downloads/NCS-96147-Company-Profile.pdf",
     size: "68.5 MB",

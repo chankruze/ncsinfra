@@ -53,7 +53,7 @@ export function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Mail className="size-4 shrink-0 text-accent" />
-              {site.email}
+              {site.emails.join(" / ")}
             </li>
             <li className="flex items-start gap-2">
               <MapPin className="mt-0.5 size-4 shrink-0 text-accent" />
@@ -68,7 +68,7 @@ export function Footer() {
           <p>
             © {new Date().getFullYear()} {site.legalName}. All rights reserved.
           </p>
-          <p>IREPS ID — {site.ireps}</p>
+          <p>IREPS ID — {site.ireps} · GSTIN — {site.gstin}</p>
         </Container>
       </div>
     </footer>

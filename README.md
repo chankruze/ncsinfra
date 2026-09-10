@@ -12,7 +12,7 @@ and organised as typed data modules under `src/data/`.
 
 - **Vite + React + TypeScript**
 - **Tailwind CSS v4** — theme tokens defined in `src/index.css` via `@theme`
-- **Framer Motion** — scroll-reveal animations (`src/components/ui/Reveal.tsx`)
+- **Framer Motion** — scroll-reveal animations (`src/components/ui/reveal.tsx`)
 - **lucide-react** — iconography
 - Self-hosted variable fonts: Inter (body) and Space Grotesk (display)
 
@@ -20,22 +20,23 @@ and organised as typed data modules under `src/data/`.
 
 ```
 src/
+  pages/
+    home/       One file per homepage section (hero, projects, contact, ...) + index.tsx composing them
   components/
-    layout/     Header, Footer
-    sections/   One file per homepage section (Hero, Projects, Contact, ...)
-    ui/         Shared building blocks (Button, Container, Reveal, SectionHeading)
+    layout/     header, footer, developer-credit
+    ui/         Shared building blocks (button, container, reveal, section-heading)
   data/         Typed content extracted from the company profile
   assets/       Curated + optimised photography, real geotagged field photos, logos
 ```
 
-The homepage (`src/App.tsx`) composes sections in this order: Hero →
+The homepage (`src/pages/home/index.tsx`) composes sections in this order: Hero →
 Trust Bar → About → Services → Projects → Railway Expertise → Why Us →
 Financials → Video CTA → Gallery → Founder → FAQ → Contact.
 
 ## Notable implementation details
 
 - The **Video CTA** section embeds the requested YouTube video as a
-  chromeless, muted, looping background (`YouTubeBackground.tsx`) using
+  chromeless, muted, looping background (`youtube-background.tsx`) using
   the standard 16:9-oversize-and-center technique so it always covers
   the section regardless of viewport ratio. Disabled on small screens
   in favour of a static poster image to save mobile bandwidth.

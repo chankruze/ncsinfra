@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import heroImage from "../../assets/photos/hero-railway.jpg";
-import { Container } from "../ui/Container";
-import { LinkButton } from "../ui/Button";
-import { Reveal } from "../ui/Reveal";
+import { Container } from "../../components/ui/container";
+import { LinkButton } from "../../components/ui/button";
+import { Reveal } from "../../components/ui/reveal";
 import { heroStats, site } from "../../data/site";
 
 export function Hero() {

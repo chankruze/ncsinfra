@@ -1,6 +1,6 @@
 import { CheckCircle2 } from "lucide-react";
-import { Container } from "../ui/Container";
-import { Reveal } from "../ui/Reveal";
+import { Container } from "../../components/ui/container";
+import { Reveal } from "../../components/ui/reveal";
 import { trustPoints } from "../../data/site";
 
 export function TrustBar() {

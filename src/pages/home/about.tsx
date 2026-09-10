@@ -1,8 +1,8 @@
 import aboutImage from "../../assets/photos/about-site.jpg";
-import { Container } from "../ui/Container";
-import { SectionHeading } from "../ui/SectionHeading";
-import { LinkButton } from "../ui/Button";
-import { Reveal } from "../ui/Reveal";
+import { Container } from "../../components/ui/container";
+import { SectionHeading } from "../../components/ui/section-heading";
+import { LinkButton } from "../../components/ui/button";
+import { Reveal } from "../../components/ui/reveal";
 import { site } from "../../data/site";
 
 export function About() {

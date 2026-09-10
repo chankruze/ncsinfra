@@ -1,5 +1,5 @@
 import { cn } from "../../lib/cn";
-import { Reveal } from "./Reveal";
+import { Reveal } from "./reveal";
 
 export function SectionHeading({
   eyebrow,

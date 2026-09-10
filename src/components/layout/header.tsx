@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { Container } from "../ui/Container";
-import { LinkButton } from "../ui/Button";
+import { Container } from "../ui/container";
+import { LinkButton } from "../ui/button";
 import { navLinks, site } from "../../data/site";
 import { cn } from "../../lib/cn";
 import founderMark from "../../assets/brand/founder-mark.jpg";

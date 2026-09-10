@@ -9,9 +9,9 @@ import {
   Wrench,
   type LucideIcon,
 } from "lucide-react";
-import { Container } from "../ui/Container";
-import { SectionHeading } from "../ui/SectionHeading";
-import { Reveal } from "../ui/Reveal";
+import { Container } from "../../components/ui/container";
+import { SectionHeading } from "../../components/ui/section-heading";
+import { Reveal } from "../../components/ui/reveal";
 import { services, type Service } from "../../data/services";
 
 const icons: Record<Service["icon"], LucideIcon> = {

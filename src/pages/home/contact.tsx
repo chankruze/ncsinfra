@@ -3,10 +3,10 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import msmeLogo from "../../assets/logos/msme.png";
 import gemLogo from "../../assets/logos/gem.png";
 import railwaysLogo from "../../assets/logos/indian-railways.png";
-import { Container } from "../ui/Container";
-import { SectionHeading } from "../ui/SectionHeading";
-import { Button } from "../ui/Button";
-import { Reveal } from "../ui/Reveal";
+import { Container } from "../../components/ui/container";
+import { SectionHeading } from "../../components/ui/section-heading";
+import { Button } from "../../components/ui/button";
+import { Reveal } from "../../components/ui/reveal";
 import { site } from "../../data/site";
 
 const projectTypes = [

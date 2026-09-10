@@ -35,9 +35,9 @@ import galleryScaffoldClimb from "../../assets/photos/gallery-scaffold-climb.jpg
 import galleryStellClimber from "../../assets/photos/gallery-steel-climber.jpg";
 import gallerySurveyor from "../../assets/photos/gallery-surveyor.jpg";
 import galleryWelding from "../../assets/photos/gallery-welding.jpg";
-import { Container } from "../ui/Container";
-import { SectionHeading } from "../ui/SectionHeading";
-import { Reveal } from "../ui/Reveal";
+import { Container } from "../../components/ui/container";
+import { SectionHeading } from "../../components/ui/section-heading";
+import { Reveal } from "../../components/ui/reveal";
 
 const ceremonyCredit = { label: "by PoojaPatha Pvt. Ltd.", href: "https://poojapatha.com" };
 

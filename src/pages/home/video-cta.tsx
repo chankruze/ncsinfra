@@ -1,8 +1,8 @@
 import ctaPoster from "../../assets/photos/cta-poster.jpg";
-import { Container } from "../ui/Container";
-import { LinkButton } from "../ui/Button";
-import { Reveal } from "../ui/Reveal";
-import { YouTubeBackground } from "../ui/YouTubeBackground";
+import { Container } from "../../components/ui/container";
+import { LinkButton } from "../../components/ui/button";
+import { Reveal } from "../../components/ui/reveal";
+import { YouTubeBackground } from "../../components/ui/youtube-background";
 
 export function VideoCta() {
   return (
@@ -19,7 +19,7 @@ export function VideoCta() {
         />
       </div>
       <div className="absolute inset-0 bg-ink/70" />
-      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/20" />
+      <div className="absolute inset-0 bg-linear-to-t from-ink via-ink/40 to-ink/20" />
 
       <Container className="relative text-center">
         <Reveal>

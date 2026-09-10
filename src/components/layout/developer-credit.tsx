@@ -1,7 +1,7 @@
 import { Code, ExternalLink } from "lucide-react";
-import { Container } from "../ui/Container";
-import { Reveal } from "../ui/Reveal";
-import { GlowSeam } from "../ui/GlowSeam";
+import { Container } from "../ui/container";
+import { Reveal } from "../ui/reveal";
+import { GlowSeam } from "../ui/glow-seam";
 import { technologyPartner } from "../../data/site";
 import geekofiaMark from "../../assets/brand/geekofia-mark.png";
 

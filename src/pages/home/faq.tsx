@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Plus } from "lucide-react";
-import { Container } from "../ui/Container";
-import { SectionHeading } from "../ui/SectionHeading";
+import { Container } from "../../components/ui/container";
+import { SectionHeading } from "../../components/ui/section-heading";
 import { faqs } from "../../data/capabilities";
 import { cn } from "../../lib/cn";
 

@@ -1,5 +1,5 @@
 import { Mail, MapPin, Phone } from "lucide-react";
-import { Container } from "../ui/Container";
+import { Container } from "../ui/container";
 import { navLinks, site } from "../../data/site";
 import founderMark from "../../assets/brand/founder-mark.jpg";
 

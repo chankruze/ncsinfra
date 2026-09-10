@@ -45,11 +45,17 @@ export const navLinks = [
 ];
 
 export const technologyPartner = {
-  name: "Geekofia",
-  developer: "chankruze",
-  href: "https://geekofia.in",
-  github: "https://github.com/geekofia",
-  linkedin: "https://linkedin.com/company/geekofia",
+  agency: {
+    name: "geekofia",
+    href: "https://geekofia.in",
+    github: "https://github.com/geekofia",
+    linkedin: "https://www.linkedin.com/company/76218617/",
+  },
+  developer: {
+    name: "chankruze",
+    href: "https://github.com/chankruze",
+    linkedin: "https://www.linkedin.com/in/chankruze/",
+  },
 };
 
 export const trustPoints = [

@@ -7,6 +7,8 @@ import { Projects } from "./projects";
 import { RailwayExpertise } from "./railway-expertise";
 import { WhyUs } from "./why-us";
 import { MaterialPartners } from "./material-partners";
+import { Equipment } from "./equipment";
+import { EquipmentPartners } from "./equipment-partners";
 import { Financials } from "./financials";
 import { VideoCta } from "./video-cta";
 import { Gallery } from "./gallery";
@@ -26,6 +28,8 @@ export function Home() {
       <RailwayExpertise />
       <WhyUs />
       <MaterialPartners />
+      <Equipment />
+      <EquipmentPartners />
       <Financials />
       <VideoCta />
       <Gallery />

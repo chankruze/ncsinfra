@@ -40,7 +40,7 @@ export function MaterialPartners() {
 
       <div className="group mt-8 overflow-hidden mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
         <div className="flex w-max animate-marquee items-center justify-center gap-8 group-hover:[animation-play-state:paused]">
-          {[...logos].map((logo, i) => (
+          {[...logos, ...logos].map((logo, i) => (
             <div
               key={i}
               className="flex h-16 w-32 shrink-0 items-center justify-center rounded-lg bg-white p-3 lg:h-20 lg:w-40"

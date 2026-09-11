@@ -1,6 +1,6 @@
 import { motion, type Variants } from "framer-motion";
 import { type ReactNode } from "react";
-import { cn } from "../../lib/cn";
+import { cn } from "cn";
 
 const variants: Variants = {
   hidden: { opacity: 0, y: 28 },

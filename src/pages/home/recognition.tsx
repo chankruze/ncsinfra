@@ -2,11 +2,20 @@ import railwaysLogo from "../../assets/logos/indian-railways.png";
 import gemLogo from "../../assets/logos/gem.png";
 import msmeLogo from "../../assets/logos/msme.png";
 import { Container } from "../../components/ui/container";
+import { cn } from "cn";
 
 const logos = [
-  { src: railwaysLogo, alt: "Indian Railways" },
-  { src: gemLogo, alt: "Government e Marketplace (GeM)" },
-  { src: msmeLogo, alt: "Ministry of MSME, Govt. of India" },
+  { src: railwaysLogo, alt: "Indian Railways", className: "h-16 lg:h-20" },
+  {
+    src: gemLogo,
+    alt: "Government e Marketplace (GeM)",
+    className: "h-20 lg:h-24",
+  },
+  {
+    src: msmeLogo,
+    alt: "Ministry of MSME, Govt. of India",
+    className: "h-12 lg:h-16",
+  },
 ];
 
 export function Recognition() {
@@ -24,7 +33,7 @@ export function Recognition() {
                 key={logo.alt}
                 src={logo.src}
                 alt={logo.alt}
-                className="h-12 w-auto lg:h-16"
+                className={cn("w-auto", logo.className)}
               />
             ))}
           </div>

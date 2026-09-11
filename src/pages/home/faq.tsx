@@ -3,7 +3,7 @@ import { Plus } from "lucide-react";
 import { Container } from "../../components/ui/container";
 import { SectionHeading } from "../../components/ui/section-heading";
 import { faqs } from "../../data/capabilities";
-import { cn } from "../../lib/cn";
+import { cn } from "cn";
 
 export function Faq() {
   const [open, setOpen] = useState<number | null>(0);

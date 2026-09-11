@@ -1,6 +1,6 @@
 import { type AnchorHTMLAttributes, type ButtonHTMLAttributes } from "react";
 import { ArrowUpRight } from "lucide-react";
-import { cn } from "../../lib/cn";
+import { cn } from "cn";
 
 const variants = {
   primary: "bg-accent text-white hover:bg-accent-dark",

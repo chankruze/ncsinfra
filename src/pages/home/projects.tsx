@@ -4,7 +4,7 @@ import { SectionHeading } from "../../components/ui/section-heading";
 import { LinkButton } from "../../components/ui/button";
 import { Reveal } from "../../components/ui/reveal";
 import { projects } from "../../data/projects";
-import { cn } from "../../lib/cn";
+import { cn } from "cn";
 
 const ratingStyles: Record<string, string> = {
   "Very Good": "bg-accent-soft text-accent-dark",

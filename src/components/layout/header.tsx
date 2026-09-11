@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { Container } from "../ui/container";
 import { LinkButton } from "../ui/button";
 import { navLinks, site } from "../../data/site";
-import { cn } from "../../lib/cn";
+import { cn } from "cn";
 import founderMark from "../../assets/brand/founder-mark.jpg";
 
 export function Header() {

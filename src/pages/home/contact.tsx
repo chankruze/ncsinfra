@@ -1,8 +1,5 @@
 import { useState, type FormEvent } from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
-import msmeLogo from "../../assets/logos/msme.png";
-import gemLogo from "../../assets/logos/gem.png";
-import railwaysLogo from "../../assets/logos/indian-railways.png";
 import { Container } from "../../components/ui/container";
 import { SectionHeading } from "../../components/ui/section-heading";
 import { Button } from "../../components/ui/button";
@@ -86,12 +83,6 @@ export function Contact() {
             <p className="mt-1 text-sm font-medium text-ink">
               GSTIN — {site.gstin}
             </p>
-          </Reveal>
-
-          <Reveal delay={0.34} className="mt-8 flex flex-wrap items-center gap-6">
-            <img src={railwaysLogo} alt="Indian Railways" className="h-11 w-auto" />
-            <img src={gemLogo} alt="Government e Marketplace (GeM)" className="h-9 w-auto" />
-            <img src={msmeLogo} alt="Ministry of MSME, Govt. of India" className="h-10 w-auto" />
           </Reveal>
         </div>
 
